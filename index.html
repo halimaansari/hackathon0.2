@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.0/dist/sweetalert2.min.css">
 </head>
 <body>
+
+    <!-- Navbar with Logo, Search Bar, and Auth Buttons -->
+    <div id="navbar">
+        <div id="logo">
+            <img src="./assests/Ellipse 1.png" alt="Logo 1">
+            <img src="./assests/Coranu.png" alt="Logo 2">
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search by category...">
+        </div>
+
+        <div class="auth-buttons">
+            <!-- Links to Login and Sign Up Pages -->
+            <a href="profile.html"><button class="auth-button" id="signup-btn">Add post</button></a>
+            <a href="signin.html"><button class="auth-button" id="login-btn">Login</button></a>
+            <a href="signup.html"><button class="auth-button" id="signup-btn">Sign Up</button></a>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main-content">
+        <h1>Thoughts Ideas And Story</h1>
+        <p>A space where creativity flows, ideas take shape, and stories come to life. Dive in, explore, and connect with insights that inspire and resonate.</p>
+    </div>
+    <div id="health-posts-container"></div>
+    <div id="general-posts-container"></div>
+    <div id="education-posts-container"></div>
+    <div id="politics-posts-container"></div>
     
 </body>
 </html>
